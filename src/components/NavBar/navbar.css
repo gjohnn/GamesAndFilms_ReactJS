@@ -1,0 +1,42 @@
+header{
+    background-color: black;
+}
+
+.bg-dark{
+    --bs-bg-opacity: 0;
+}
+
+.headerin{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icoheader{
+    width: 50px;
+    margin: 4px 0px 4px 4px;
+}
+.logonom{
+    font-size: 30px;
+    margin-left: 4px;
+    color: white;
+}
+
+.bordernav{
+    color:white;
+    border: 2px solid white;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+}
+
+.flexnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

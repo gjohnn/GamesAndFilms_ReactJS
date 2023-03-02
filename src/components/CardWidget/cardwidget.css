@@ -1,0 +1,13 @@
+.contimg{
+    width: 70px;
+}
+
+.imgcart{
+    width: 50px;
+}
+
+.cardwidcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
