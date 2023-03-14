@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {NavLink} from "react-router-dom";
 
 
 
@@ -14,12 +15,14 @@ function NavBar() {
   return (
     <header>
       <div className="headerin container">
+        <NavLink to={"/"}>
         <div className="contlogo">
           <div className="logo">
             <img src={logo} alt="Logo" class="icoheader" />
           </div>
-          <div className="logonom">MendoTechno</div>
+          <div class="logonom">Games&Films</div>
         </div>
+          </NavLink>
         <div>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" class="fullblack">
       <Container>
@@ -27,20 +30,23 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             
-            <NavDropdown title="Productos" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Motherboard</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">GPUs
+            <NavDropdown title="Juegos" id="collasible-nav-dropdown">
+              <NavDropdown.Item href=""><NavLink to={"/cat/pc"}>PC</NavLink></NavDropdown.Item>
+              <NavDropdown.Item href=""><NavLink to={"/cat/ps5"}>PS5</NavLink></NavDropdown.Item>
+              <NavDropdown.Item href=""><NavLink to={"/cat/ps4"}>PS4</NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Memorias RAM</NavDropdown.Item>
+              <NavDropdown.Item href=""><NavLink to={"/cat/subcat/ps3"}>PS3</NavLink></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Todos
+                <NavLink to="/cat/games">Todos</NavLink>
+                
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">ServiMendo</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            
+            <Nav.Link href="/cat/films">Películas</Nav.Link>
+            <Nav.Link eventKey={2} href="/">
               Contacto
             </Nav.Link>
           </Nav>

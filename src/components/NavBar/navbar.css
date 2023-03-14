@@ -1,6 +1,5 @@
 header{
-    background-color: black;
-}
+    background-color: black;}
 
 .bg-dark{
     --bs-bg-opacity: 0;
@@ -24,6 +23,7 @@ header{
     font-size: 30px;
     margin-left: 4px;
     color: white;
+    text-decoration: none;
 }
 
 .bordernav{
@@ -39,4 +39,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+a{
+    text-decoration: none;
 }
