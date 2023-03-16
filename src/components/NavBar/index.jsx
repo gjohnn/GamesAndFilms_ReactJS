@@ -1,7 +1,7 @@
 
 import "../../App.css"
 import "./navbar.css";
-import CardWidget from "../CardWidget/index.jsx"
+import CartWidget from "../CartWidget";
 import logo from "./logo.png";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -35,7 +35,7 @@ function NavBar() {
               <NavDropdown.Item href=""><NavLink to={"/cat/ps5"}>PS5</NavLink></NavDropdown.Item>
               <NavDropdown.Item href=""><NavLink to={"/cat/ps4"}>PS4</NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item href=""><NavLink to={"/cat/subcat/ps3"}>PS3</NavLink></NavDropdown.Item>
+              <NavDropdown.Item href=""><NavLink to={"/cat/ps3"}>PS3</NavLink></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 <NavLink to="/cat/games">Todos</NavLink>
@@ -54,7 +54,7 @@ function NavBar() {
       </Container>
     </Navbar>
         </div>
-      <CardWidget/>
+      <CartWidget/>
       </div>
     </header>
   );

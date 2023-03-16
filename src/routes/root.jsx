@@ -2,7 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import NavBar from "../components/NavBar";
-import Contador from "../components/body/contador";
+import Contador from "../components/button/contador";
 import ItemListCont from "../components/ItemListContainer/itemlistcontainer";
 import Carouselindex from "../components/carousel/carousel";
 import {useParams} from "react-router-dom";
@@ -13,9 +13,11 @@ function Root() {
   return (
     <>
       <NavBar />
+      <div className="container">
       <Carouselindex />
       <ItemListCont isCategoryRoute={isCategoryRoute} catID={params.id} />
       <Contador />
+      </div>
     </>
   );
 }

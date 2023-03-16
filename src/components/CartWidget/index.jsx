@@ -1,6 +1,6 @@
 import "./cardwidget.css"
 import Cartimage from "../NavBar/shoppingcartlogo.png"
-function CardWidget(){
+function CartWidget(){
     return(
         <div class="cardwidcont">
             <div className="contimg"><img src={Cartimage} class="imgcart"></img></div>
@@ -11,4 +11,4 @@ function CardWidget(){
 
 }
 
-export default CardWidget;
+export default CartWidget;

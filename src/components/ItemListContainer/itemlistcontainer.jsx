@@ -11,9 +11,9 @@ function ItemListCont({catID, isCategoryRoute}) {
       .then((response) =>{
         if (isCategoryRoute){
           const productsFiltered = response.filter(
-            (product)=> product.cat === catID
+            (product)=> (product.cat === catID || product.subcat === catID)
           );
-          setProducts(productsFiltered)
+          setProducts(productsFiltered);
         }else{
           setProducts(response);
         }
@@ -22,7 +22,7 @@ function ItemListCont({catID, isCategoryRoute}) {
   }, [catID]);
 
   return (
-    <div>
+    <div className="container">
       <ItemList products={products} />
     </div>
   );
