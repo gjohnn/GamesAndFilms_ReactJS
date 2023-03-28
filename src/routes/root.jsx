@@ -16,10 +16,11 @@ function Root() {
       <div className="container">
       <Carouselindex />
       <ItemListCont isCategoryRoute={isCategoryRoute} catID={params.id} />
-      <Contador />
+     
       </div>
     </>
   );
 }
+//<Contador />
 
 export default Root;

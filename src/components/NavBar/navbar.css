@@ -43,4 +43,17 @@ header{
 
 a{
     text-decoration: none;
+    color: white!important;
+}
+
+Nav{
+    background-color: black;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.dropdown-menu{
+    background-color: black;
 }

@@ -13,7 +13,7 @@ export default [
   {
     id: 1,
     nombre: "Marvel Spider-Man Remastered",
-    cat: "games",
+    category: "games",
     genre: "action",
     devs: "Insomniac",
     descrip: "lorem lorem",
@@ -25,7 +25,7 @@ export default [
   {
     id: 2,
     nombre: "Atomic Heart",
-    cat: "games",
+    category: "games",
     genre: "action fps",
     devs: "Mundfish",
     descrip: "lorem lorem",
@@ -37,7 +37,7 @@ export default [
   {
     id: 3,
     nombre: "Hogwarts Legacy",
-    cat: "games",
+    category: "games",
     genre: "action role-playing",
     devs: "Avalanche Software",
     descrip: "lorem lorem",
@@ -49,7 +49,7 @@ export default [
   {
     id: 4,
     nombre: "Sekiro: Shadows Die Twice",
-    cat: "games",
+    category: "games",
     genre: "single-player",
     devs: "FromSoftware Inc.",
     descrip: "lorem lorem",
@@ -61,7 +61,7 @@ export default [
   {
     id: 5,
     nombre: "Grand Theft Auto IV",
-    cat: "games",
+    category: "games",
     genre: "open-world",
     devs: "Rockstar",
     descrip: "lorem lorem",
@@ -74,7 +74,7 @@ export default [
     id: 6,
     nombre: "Interstellar",
     genre: "ciencia ficcion",
-    cat: "films",
+    category: "films",
     devs: "Insomniac",
     descrip: "lorem lorem",
     image: Film1,
@@ -85,7 +85,7 @@ export default [
   {
     id: 7,
     nombre: "John Wick 2",
-    cat: "films",
+    category: "films",
     genre: "action",
     devs: "Insomniac",
     descrip: "lorem lorem",
@@ -97,7 +97,7 @@ export default [
   {
     id: 8,
     nombre: "Pulp Fiction",
-    cat: "films",
+    category: "films",
     genre: "action",
     devs: "Insomniac",
     descrip: "lorem lorem",
@@ -109,7 +109,7 @@ export default [
   {
     id: 9,
     nombre: "El Padrino II",
-    cat: "films",
+    category: "films",
     genre: "action",
     devs: "Insomniac",
     descrip: "lorem lorem",
@@ -121,7 +121,7 @@ export default [
   {
     id: 10,
     nombre: "Spider-Man: Into the Spider-Verse",
-    cat: "films",
+    category: "films",
     genre: "action",
     devs: "Insomniac",
     descrip: "lorem lorem",

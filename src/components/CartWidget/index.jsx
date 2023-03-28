@@ -1,5 +1,5 @@
 import "./cardwidget.css"
-import Cartimage from "../NavBar/shoppingcartlogo.png"
+import Cartimage from "../../assets/navbarimg/shoppingcartlogo.png"
 function CartWidget(){
     return(
         <div class="cardwidcont">

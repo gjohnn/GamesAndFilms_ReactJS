@@ -1,25 +1,37 @@
 import "./ifinal.css";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Item({ product }) {
-  const {id, nombre, cat, genre,devs, descrip,image,precio,stock,subcat} = product
+  const {
+    id,
+    nombre,
+    category,
+    genre,
+    devs,
+    descrip,
+    image,
+    precio,
+    stock,
+    subcat,
+  } = product;
   return (
-    <NavLink to={`/item/${cat}/${id}`} key={id} >
+    
+      
     <div class="contprod">
-      <div class="contprodimg">
-        <img src={image} alt={`Img ${id}`} />
+      <span className="subcatz">{subcat.toUpperCase()}</span>
+      <NavLink to={`/item/${category}/${id}`} key={id}>
+      <div className="contprodimg">
+        <img src={image} alt={`img ${id}`} />
       </div>
-      <div class="contprodtext">
-        <div class="prodtext">
-          <p class="contprodname">{nombre}</p>
-          <p class="contprodprice">${precio}</p>
-          <button type="button" class="btn btn-success btncom">
-            +
-          </button>
-        </div>
+      </NavLink>
+      <div className="contprodtext">
+        <span className="prodname">{nombre}</span>
+        <span className="prodprice">${precio}</span>
+        <span className="btnbuy">
+          <button className="btn btn-success">+</button>
+        </span>
       </div>
     </div>
-    </NavLink>
   );
 }
 

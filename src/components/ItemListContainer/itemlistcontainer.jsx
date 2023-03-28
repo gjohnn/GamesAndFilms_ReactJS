@@ -11,7 +11,7 @@ function ItemListCont({catID, isCategoryRoute}) {
       .then((response) =>{
         if (isCategoryRoute){
           const productsFiltered = response.filter(
-            (product)=> (product.cat === catID || product.subcat === catID)
+            (product)=> (product.category === catID || product.subcat === catID)
           );
           setProducts(productsFiltered);
         }else{
