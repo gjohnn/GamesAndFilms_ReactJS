@@ -41,6 +41,11 @@ header{
     justify-content: center;
 }
 
+.centernav{
+    align-items: center;
+    display: flex;
+}
+
 a{
     text-decoration: none;
     color: white!important;

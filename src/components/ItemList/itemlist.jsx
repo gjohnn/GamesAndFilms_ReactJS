@@ -5,8 +5,8 @@ function ItemList({ products }){
     return(
       <div>
         <ul>
-            {products.map((product, index)=>(
-            <Item product={ product } key={product.id}/>
+            {products.map((products, index)=>(
+            <Item products={ products } key={products.id}/>
             ))}
         </ul>
       </div>
