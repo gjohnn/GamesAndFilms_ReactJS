@@ -2,9 +2,8 @@ import "../../App.css";
 import "./navbar.css";
 import CartWidget from "../CartWidget";
 import logo from "../../assets/navbarimg/logo.png";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
+
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -47,49 +46,40 @@ function NavBar() {
                 <Offcanvas.Body className="bg-black">
                   <Nav className="justify-content-end flex-grow-1 pe-3 text-light">
                     <div className="centernav">
-                    <NavLink className="text-light" to={"/category/films"}>
-                      Pelis
-                    </NavLink>
-                    <NavDropdown
-                      id={`offcanvasNavbarDropdown-expand-${"lg"}`}
-                      className="text-light bg-dark"
-                      title="Juegos"
-                    >
-                      <NavDropdown.Item href={"/category/pc"}>
-                        <NavLink className="na" to={"/category/pc"}>PC</NavLink>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href={"/category/ps5"}>
-                        <NavLink to={"/category/ps5"}>PS5</NavLink>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href={"/category/ps4"}>
-                        <NavLink to={"/category/ps4"}>PS4</NavLink>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href={"/category/ps3"}>
-                        <NavLink to={"/category/ps3"}>PS3</NavLink>
-                      </NavDropdown.Item>
-                      <NavDropdown.Divider />
-                      <NavDropdown.Item href={"/category/games"}>
-                        <NavLink to={"/category/games"}>Todos</NavLink>
-                      </NavDropdown.Item>
-                    </NavDropdown>
-                  </div>
+                      <NavLink className="text-light" to={"/category/films"}>
+                        Pelis
+                      </NavLink>
+                      <NavDropdown
+                        id={`offcanvasNavbarDropdown-expand-${"lg"}`}
+                        className="text-light bg-dark"
+                        title="Juegos"
+                      >
+                        <NavDropdown.Item href={"/category/pc"}>
+                          <NavLink className="na" to={"/category/pc"}>
+                            PC
+                          </NavLink>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href={"/category/ps5"}>
+                          <NavLink to={"/category/ps5"}>PS5</NavLink>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href={"/category/ps4"}>
+                          <NavLink to={"/category/ps4"}>PS4</NavLink>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href={"/category/ps3"}>
+                          <NavLink to={"/category/ps3"}>PS3</NavLink>
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href={"/category/games"}>
+                          <NavLink to={"/category/games"}>Todos</NavLink>
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                    </div>
                   </Nav>
-                  <Form className="d-flex">
-                    <Form.Control
-                      type="search"
-                      placeholder="Search"
-                      className="me-2"
-                      aria-label="Search"
-                    />
-                    <Button variant="outline-success">Search</Button>
-                  </Form>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
-              
-            </Container> 
-            <CartWidget/>
+            </Container>
+            <CartWidget />
           </Navbar>
-          
         </div>
       </header>
     </>
