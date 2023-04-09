@@ -16,14 +16,15 @@ export default function Cart() {
     actualizeContador,
     sendBuying,
   } = useCartContext();
+
   
   return (
     <>
       <CartContextProvider>
         <NavBar />
         <div className="container">
-          <CartCont ul={"color:white!important"}/>
-        <NavLink to={`/checkout`}><button>Finalizar compra</button></NavLink>
+          <CartCont />
+       { carrito.length == 0 ?  "" :<NavLink to={`/checkout`}  btn={`hidden`}><button>Finalizar compra</button></NavLink> } 
         </div>
       </CartContextProvider>
     </>

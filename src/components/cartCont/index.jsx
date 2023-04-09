@@ -16,7 +16,7 @@ function CartCont() {
 
   return (
     <main>
-      <CartList carrito = {carrito}/>
+      <CartList carrito = {carrito} btn={`visible`}/>
     </main>
   );
 }

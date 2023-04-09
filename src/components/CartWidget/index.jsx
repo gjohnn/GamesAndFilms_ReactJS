@@ -25,8 +25,8 @@ function CartWidget() {
   return (
     <div className="cardwidcont">
       
-      <Button className="btnshowcart position-relative " onClick={handleShow}>
-        <BsFillCartFill className="iconBoots" />
+      <Button className="btnshowcart btn-outline-success position-relative " onClick={handleShow}>
+        <BsFillCartFill className="iconBoots " />
         <div className="contadorCart">
         <div className="text-dark">
         {actualizeContador}
@@ -35,7 +35,7 @@ function CartWidget() {
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Cart</Modal.Title>
+          <Modal.Title className="text-white">Carrito</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <CartCont />

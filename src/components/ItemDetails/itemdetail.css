@@ -43,7 +43,9 @@ figure > img{
 }
 
 .loaderImg{
-    translate: 85px;
+    display: flex;
+    justify-content: 'center';
+    align-items:'center';
 }
 
 .loaderText{

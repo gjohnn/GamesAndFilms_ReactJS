@@ -1,7 +1,7 @@
 import { useCartContext } from "../../context/CartContext";
 import { NavLink } from "react-router-dom";
 import ItemCart from "../cartItem";
-function CartList({ carrito }) {
+function CartList({ carrito, btn}) {
   const {
     addToCart,
         restarCant,
@@ -15,17 +15,17 @@ function CartList({ carrito }) {
   return (
     <>
       {carrito.length == 0 ? (
-        <span className="d-flex justify-content-center text-black">
+        <span className="d-flex justify-content-center text-light">
           No hay productos en el carrito!
         </span>
       ) : (
         <div>
           <ul className="d-flex flex-column">
             {carrito.map((prod, index) => (
-              <ItemCart products={prod} key={prod.id} />
+              <ItemCart products={prod} key={prod.id} btn={`${btn}`} />
             ))}
           </ul>
-          <div className="text-black">Precio final: ${sumarTotal}</div>
+          <div className="text-light">Precio final: ${sumarTotal}</div>
           
         </div>
       )}

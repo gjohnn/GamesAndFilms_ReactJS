@@ -1,3 +1,13 @@
 div{
     color: white;
 }
+
+.contenedorLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaderImg{
+    margin-top: auto;
+}

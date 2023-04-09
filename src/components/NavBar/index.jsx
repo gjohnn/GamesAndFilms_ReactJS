@@ -15,7 +15,7 @@ function NavBar() {
   return (
     <>
       <header>
-        <div className="container">
+        <div className="container ">
           <Navbar
             key={"lg"}
             expand={"lg"}
@@ -85,11 +85,11 @@ function NavBar() {
                   </Form>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
-            </Container>
-          </Navbar>
-          <div>
+              
+            </Container> 
             <CartWidget/>
-            </div>
+          </Navbar>
+          
         </div>
       </header>
     </>

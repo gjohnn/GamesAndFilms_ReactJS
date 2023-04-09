@@ -2,7 +2,7 @@ import "./cartItem.css";
 import { useCartContext } from "../../context/CartContext";
 import {RotateLoader } from "react-spinners"
 
-export default function ItemCart({ products }) {
+export default function ItemCart({ products, btn }) {
   const {
     id,
     nombre,
@@ -40,9 +40,9 @@ export default function ItemCart({ products }) {
           <div>{`Cantidad: ${cantidad}`} </div>
         </div>
         <div className="buttonscart">
-          <button onClick={()=> addToCart(products, 1)} className="btn btn-success">+</button>
-          <button onClick={()=> restarCant(products)} className="btn btn-danger">-</button>
-          <button onClick={ ()=> elimProd(products) } className="btn btn-warning">Eliminar</button>
+          <button onClick={()=> addToCart(products, 1)} className={`${btn} btn btn-success m-1`}>+</button>
+          <button onClick={()=> restarCant(products)} className={`${btn} btn btn-danger m-1`}>-</button>
+          <button onClick={ ()=> elimProd(products) } className={`${btn} btn btn-warning m-1`}>Eliminar</button>
         </div>
       </div>
     </div>

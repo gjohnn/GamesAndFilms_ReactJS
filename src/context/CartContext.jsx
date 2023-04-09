@@ -60,7 +60,7 @@ export function CartContextProvider({ children }) {
 
   const elimProd = (prod) => {
     const eliminarProd = carrito.filter((buscar) => buscar.id !== prod.id);
-    return setCarrito(eliminarProd);
+    setCarrito(eliminarProd);
   };
 
   const elimCart = () => {

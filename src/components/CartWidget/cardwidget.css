@@ -34,3 +34,11 @@
     top: -10px;
     right: -10px;
 }
+
+.modal-content{
+    width: 700px;
+}
+
+.modal-title{
+    color: white!important;
+}

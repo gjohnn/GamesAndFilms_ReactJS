@@ -4,6 +4,8 @@ import { useState } from 'react';
 import CartList from "../cartList";
 import Swal from "sweetalert2";
 
+import "./checkOutList.css"
+
 
 export default function CheckoutList({ carrito }) {
 
@@ -22,7 +24,7 @@ export default function CheckoutList({ carrito }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email)) {
-      alert('Ingrese un correo electrónico válido.');
+      Swal.fire('Ingrese un correo electrónico válido.');
       return;
     }
     if (email !== confirmEmail) {
@@ -124,15 +126,15 @@ export default function CheckoutList({ carrito }) {
 
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             >
-              Enviar
+              Confirmar compra
             </button>
           </form>
         </div>
         <div className="w-full lg:w-1/2 px-4 mb-8">
           <h2 className="text-2xl font-medium mb-4">Resumen del pedido</h2>
-          <CartList carrito={carrito} btn={"hidden"}/>
+          <CartList carrito={carrito} btn={`visually-hidden`}/>
         </div>
       </div>
     </div>

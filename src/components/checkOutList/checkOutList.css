@@ -1,0 +1,10 @@
+
+form > div{
+    align-items: center;
+    display: flex;
+}
+
+
+label{
+    margin-right: 10px;
+}
